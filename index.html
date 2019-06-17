@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Hello</title>
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+
+    <style type="text/css">
+      /*
+      html5doctor.com Reset Stylesheet
+      v1.6.1
+      Last Updated: 2010-09-17
+      Author: Richard Clark - http://richclarkdesign.com
+      Twitter: @rich_clark
+      */
+
+      html, body, div, span, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      abbr, address, cite, code,
+      del, dfn, em, img, ins, kbd, q, samp,
+      small, strong, sub, sup, var,
+      b, i,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section, summary,
+      time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+      }
+
+      body {
+        line-height:1;
+      }
+
+      article,aside,details,figcaption,figure,
+      footer,header,hgroup,menu,nav,section {
+        display:block;
+      }
+
+      nav ul {
+        list-style:none;
+      }
+
+      blockquote, q {
+        quotes:none;
+      }
+
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content:'';
+        content:none;
+      }
+
+      a {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+        position:
+      }
+
+      /* change colours to suit your needs */
+      ins {
+        background-color:#ff9;
+        color:#000;
+        text-decoration:none;
+      }
+
+      /* change colours to suit your needs */
+      mark {
+        background-color:#ff9;
+        color:#000;
+        font-style:italic;
+        font-weight:bold;
+      }
+
+      del {
+        text-decoration: line-through;
+      }
+
+      abbr[title], dfn[title] {
+        border-bottom:1px dotted;
+        cursor:help;
+      }
+
+      table {
+          border-collapse:collapse;
+          border-spacing:0;
+      }
+
+      /* change border colour to suit your needs */
+      hr {
+        display:block;
+        height:1px;
+        border:0;
+        border-top:1px solid #cccccc;
+        margin:1em 0;
+        padding:0;
+      }
+
+      input, select {
+          vertical-align:middle;
+      }
+
+
+
+
+      /*//////////////////MYCODE//////////////////*/
+      body {
+        display: inline-flex;
+        width: 100%;
+      }
+
+      .mainbody {
+        width: 60%;
+      }
+
+      .rightbody {
+        width: 40%;
+      }
+
+      .main {
+        margin: 0 0 0 80px;
+        max-width:800px;
+      }
+
+      .right {
+        padding: 10px 10px 10px 10px;
+        display:inline-block;
+        border-radius:10px;
+        box-shadow:-10px 10px 20px #FFFF00;
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      .title {
+        margin: 40px 0 0px 0;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 15px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: -20px;
+      }
+
+      .nav {
+        margin: 30px 0 20px 0;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 24px;
+        font-weight: bold;
+        line-height:20px;
+      }
+
+      .subtitle {
+        margin: 30px 0 15px 0;
+        padding:13px 8px 13px 8px;
+        display:inline-block;
+        border-radius:10px;
+        box-shadow:10px 10px 20px #FF0000;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 13px;
+        font-weight: bold;
+        color: #FF0000;
+      }
+
+      p {
+        margin:15px 0 15px 0;
+        padding-left: 10px;
+        font-family: malgun gothic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        text-align: justify;
+        color: #000;
+        line-height: 18px;
+      }
+
+      img {
+        width:220px;
+        height:auto;
+        max-width:500px;
+      }
+
+      a:link, a:visited {
+        padding:8px 8px 8px 8px;
+        border-radius:10px;
+        box-shadow:10px 10px 20px #0000FF;
+        display:inline-block;
+        color: #001eff;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background:#00FF00;
+        color: #fff;
+        box-shadow:10px 10px 20px #00FF00;
+      }
+
+      a:active{
+        background:#FF00FF;
+        color: #fff;
+        box-shadow:10px 10px 20px #FF00FF;
+      }
+
+      #quote1 {
+        margin: 80px 30px 0 10px;
+        position: relative;
+        right: 50px;
+      }
+
+      #quote2 {
+        margin: 500px 30px 0 10px;
+      }
+
+      #quote3 {
+        margin: 800px 30px 0 10px;
+      }
+
+      .index_gallery {
+        width: 180%
+      }
+
+      @media screen and (max-width: 600px){
+        body {
+          display: block;
+          width: 200%
+        }
+
+        .mainbody {
+          width:50%;
+          position: -webkit-sticky;
+          position: sticky;
+          left: 0px;
+        }
+
+        .rightbody{
+          width: 70%;
+          position: absolute;
+          left: 95%;
+          top: 0;
+        }
+
+        .main {
+          margin: 0 0 0 6%;
+          max-width:85%;
+        }
+
+        .right {
+          border-radius:10px;
+          box-shadow:-10px 10px 20px #FFFF00;
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        #quote1 {
+          margin: 180px 30px 0 10px;
+        }
+
+        #quote2 {
+          margin: 500px 30px 0 10px;
+        }
+
+        img {
+          width:49%;
+          height:auto;
+          max-width:500px;
+        }
+
+        .index_gallery {
+          width: 100%
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="mainbody">
+      <div class="main">
+
+        <div class="title"><a title="" href="https://eivillamuelas.tumblr.com/">@eivillamuelas</a></div>
+
+          <div class="nav">
+            <a href="https://eivillamuelas.tumblr.com/burritobar_en">burrito bar</a>
+            <a href="https://eivillamuelas.tumblr.com/burritocity_en">burrito city</a>
+            <a href="https://eivillamuelas.tumblr.com/robinhowardgardens_en">robin howard gardens</a>
+            <a href="https://eivillamuelas.tumblr.com/@theintangiblecity">@theintangiblecity</a>
+            <a href="https://eivillamuelas.tumblr.com/patent_en">patent 11124</a>
+            <a href="https://eivillamuelas.tumblr.com/smiley">smiley</a>
+          </div>
+
+          <div class="index_gallery">
+          
+          <img class="cuerpo"  src="https://66.media.tumblr.com/249b22cc67387827b755271983216241/tumblr_pt9cusUvkg1vsro2mo1_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/248aa629daf7738ec30adfb93f853131/tumblr_pt9cusUvkg1vsro2mo2_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/3e05ae929d9b586efe8137e9bbe8b1dd/tumblr_pt9cusUvkg1vsro2mo3_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/3412b15b1ff201efa4285c0b9087f38a/tumblr_pt9cusUvkg1vsro2mo4_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/07dac6533b16e591996c7c8798bd72b9/tumblr_pt9cusUvkg1vsro2mo5_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/1362716c6c8b1a3747d3c3ac665eb892/tumblr_pt9cusUvkg1vsro2mo6_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/2ee100ef007b9b155da805f783bc79d6/tumblr_pt9cusUvkg1vsro2mo8_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/b5a60b7aa2bb737c624003268f9912bf/tumblr_pt9cusUvkg1vsro2mo9_1280.png" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/338c94f0670f407b5e7ea9c1b4473d0f/tumblr_pt9cusUvkg1vsro2mo10_1280.jpg" />
+          <img class="cuerpo"  src="https://66.media.tumblr.com/961473511c60dfa41710872f4106dcf3/tumblr_pt9cusUvkg1vsro2mo7_1280.jpg" />
+          
+           <img class="cuerpo"  src="https://66.media.tumblr.com/240fbbecd5bfed43854e75c2ae486332/tumblr_pqc1gjASSH1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/7b8f65b13fc5536706bc4f5ae5beae83/tumblr_pqc1gjASSH1vsro2mo2_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/561b5676bc0a8ea1c8808e170322599b/tumblr_pqc1gjASSH1vsro2mo3_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/d89c13a4e63cd24618a21a49b83b26c2/tumblr_pqc1gjASSH1vsro2mo4_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/b70f0e56ba73a374cc6796287eb016cf/tumblr_poa3ce5aBZ1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/484beb4cd8fc891addda20d533dc9c5b/tumblr_poa3ce5aBZ1vsro2mo2_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/a4a22106ddf8e0f8e987143b162b018d/tumblr_poa3ce5aBZ1vsro2mo3_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/0dc5a9e3b93192f4ed6043feafe662d3/tumblr_poa3ce5aBZ1vsro2mo4_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/e9eb5a3324eaed8332973ced284c1647/tumblr_poa3ce5aBZ1vsro2mo5_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/bc4c94a678df188ee5d5c25d197afa5b/tumblr_pnfc0cYtYp1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/0c6645511f65d2fc94d647a7890bc3a8/tumblr_pnfc0cYtYp1vsro2mo2_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/1c5cfd18a69652e9f9f51f9b7cbed06b/tumblr_pnfc0cYtYp1vsro2mo3_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/0c13c5ade8e94e7a3aae9a93d7c0971b/tumblr_pnfc0cYtYp1vsro2mo4_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/c36c4b675b8fc7ae9d6c6cd3b96879fc/tumblr_pnfc0cYtYp1vsro2mo5_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/e9b0ae4a583724cdb8510c5d0558222d/tumblr_phfuq0NqNN1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/f89adc59aef1cf76e122731c796d0e86/tumblr_phevt7NDle1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://78.media.tumblr.com/12156df78a48877040fafbb46d95db25/tumblr_peg9n2TZQO1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://66.media.tumblr.com/245c2ab9989b1666ff402bbc8e832995/tumblr_ph783lDWfy1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://78.media.tumblr.com/1fb4278f163262ccc1ebc649c8b89ae3/tumblr_pex5tr0Fld1vsro2mo1_1280.png" />
+            <img class="cuerpo"  src="https://78.media.tumblr.com/bfdbfde2d0c5c734a0c03e143166104c/tumblr_pex58lZtsn1vsro2mo1_1280.jpg" />
+            <img class="cuerpo"  src="https://78.media.tumblr.com/1068fb2e6347a760abf8c851502c5be7/tumblr_pex5umlcBg1vsro2mo1_1280.png" />
+            <img class="cuerpo"  src="https://78.media.tumblr.com/4866338e1d191014c54e221340d2c35d/tumblr_pex5t0QvIG1vsro2mo1_1280.jpg" />
+          </div>
+
+      </div>
+    </div>
+
+
+    <div class="rightbody">
+
+      <blockquote class="right" id="quote1">
+        <p>Language: EN / <a href="https://eivillamuelas.tumblr.com/es"><strong>sp</strong></a></p>
+      </blockquote>
+
+    </div>
+
+</body>
+</html>
